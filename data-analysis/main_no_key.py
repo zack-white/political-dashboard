@@ -1,10 +1,17 @@
 from openai import OpenAI
+import os
 import time
-client = OpenAI(api_key="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")
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise ValueError("OPENAI_API_KEY is not set. Add it to your environment or .env file.")
+
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 def get_sentiment(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "As an AI with expertise in language and emotion analysis, your task is to analyze the political sentiment of the following text. Always answer with exactly one of the following words: left, leaning-left, neutral, leaning-right, right. Never answer with more than one word."},
@@ -16,7 +23,7 @@ def get_sentiment(post):
 
 def get_top_names(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "As an AI with expertise in language and textual analysis and emotion analysis, your task is to analyze the following set of titles and provide to me the top 5 most mentioned people.  Then analyze the overall emotional sentiment surrounding the mention of each of these names.  Provide the person's full name followed by a one word answer from the following: very-negative, negative, neutral, positive, very-positive"},
@@ -28,7 +35,7 @@ def get_top_names(post):
 
 def get_top_names_by_party(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "As an AI with expertise in language and textual analysis and emotion analysis, your task is to analyze the following set of titles and provide to me the top 3 most mentioned republicans and then top 3 most mentioned democrats before analyzing the overall emotional sentiment surrounding the mention of each of these names.  Provide the person's full name followed by a one word answer from the following: very-negative, negative, neutral, positive, very-positive"},
@@ -40,7 +47,7 @@ def get_top_names_by_party(post):
 
 def get_top_topics(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "As an AI with expertise in language and textual analysis and emotion analysis, your task is to analyze the following set of titles and provide to me the top 5 most mentioned political topics.  I only want topics that do not refer to people.  People include last names such as Trump or Biden.  Provide a short identifying title for the topic followed by an analysis of how passionately people in the titles feel about the topic described in one word answer from the following: neutral, somewhat-passionate, passionate, very-passionate"},
@@ -52,7 +59,7 @@ def get_top_topics(post):
 
 def get_top_topics_by_party(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "As an AI with expertise in language and textual analysis and emotion analysis, your task is to analyze the following set of titles and provide to me the top 3 topics mentioned by democrat-leaning posts and the top 3 topics mentioned by republican-leaning posts.  I only want topics that do not refer to people.  People include last names such as Trump or Biden.  Provide a short identifying title for the topic followed by an analysis of how passionately people in the titles feel about the topic described in one word answer from the following: neutral, somewhat-passionate, passionate, very-passionate"},
@@ -64,7 +71,7 @@ def get_top_topics_by_party(post):
 
 def format_names_by_party(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "Please help me format this as a json file.  Provide to me a list of the republicans containing their ranking of mentions, names, and sentiments and a list of the democrats containing their ranking of mentions, names, and sentiments. Title it as Top_names_by_party"},
@@ -76,7 +83,7 @@ def format_names_by_party(post):
 
 def format_names(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "Please help me format this as a json file.  Provide to me a list of ranking of mentions, names, and sentiments. Title it as Top_names"},
@@ -88,7 +95,7 @@ def format_names(post):
 
 def format_topics(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "Please help me format this as a json file.  Provide to me a list containing for each topic the ranking of the topic, the topic, and its associated sentiment. Title it as Top_topics"},
@@ -100,7 +107,7 @@ def format_topics(post):
 
 def format_topics_by_party(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "Please help me format this as a json file.  Provide to me two lists split into republican or democrat containing for each topic the ranking of the topic, the topic, and its associated sentiment. Title it as Top_topics_by_party"},
@@ -112,7 +119,7 @@ def format_topics_by_party(post):
 
 def get_overall_sentiments(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "As an AI with expertise in language and textual analysis and emotion analysis, your task is to analyze the following set of titles.  Then provide me a for the overall sentiments of the post in a one word answer from the following: very-negative, negative, neutral, positive, very-positive.  The entire output should be in json formatting with the overarching title of overall_vibes and contain the label sentiment the value of the sentiment"},
@@ -124,7 +131,7 @@ def get_overall_sentiments(post):
 
 def combine(post):
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=OPENAI_MODEL,
         messages=[
             {"role": "system",
              "content": "Clean up the following json file to format it correctly."},
