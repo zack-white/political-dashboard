@@ -1,7 +1,6 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts';
-import { political_data_map } from './data';
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoIosClose } from "react-icons/io";
 import VibeMeter from './VibeMeter';
@@ -122,8 +121,37 @@ const LearnMoreModalContent = ({ onClose }) => {
 
 function App() {
   const [currentSubreddit, setCurrentSubreddit] = useState('r/Politics');
+  const [politicalDataMap, setPoliticalDataMap] = useState({});
+  const [lastUpdated, setLastUpdated] = useState('Loading...');
+  const [isLoadingData, setIsLoadingData] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const response = await fetch('/data/political_data_map.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error(`Failed to load dashboard data: ${response.status}`);
+        const payload = await response.json();
+        const nextMap = payload?.political_data_map || {};
+
+        setPoliticalDataMap(nextMap);
+        setLastUpdated(payload?.lastUpdated || 'Unknown');
+
+        const keys = Object.keys(nextMap);
+        if (keys.length > 0 && !nextMap[currentSubreddit]) {
+          setCurrentSubreddit(keys[0]);
+        }
+      } catch (error) {
+        console.error(error);
+        setLastUpdated('Unavailable');
+      } finally {
+        setIsLoadingData(false);
+      }
+    };
+
+    loadData();
+  }, []);
 
   const openModal = (content) => {
     setIsModalOpen(true);
@@ -135,13 +163,19 @@ function App() {
     setModalContent(null);
   };
 
-  const currentPoliticalData = political_data_map[currentSubreddit];
+  const currentPoliticalData = politicalDataMap[currentSubreddit] || [];
+  const latestPoint = currentPoliticalData[currentPoliticalData.length - 1] || {
+    posts: 0,
+    vibe: 'Unknown',
+    trending_politicians: [],
+  };
+
   const boxes = [
     { id: 1, rowSpan: 4, colSpan: 2, content: <PoliticalLeaningChart currentSubreddit={currentSubreddit} data={currentPoliticalData} />, modalContent: <PoliticalLeaningChartModal currentSubreddit={currentSubreddit} data={currentPoliticalData} onClose={closeModal} /> },
-    { id: 2, rowSpan: 2, colSpan: 1, content: <LastUpdated lastUpdated={"12:00 am on 2/18/2024"} />, modalContent: null },
-    { id: 3, rowSpan: 3, colSpan: 1, content: <TrendingPoliticians trendingPoliticians={currentPoliticalData[currentPoliticalData.length - 1]["trending_politicians"]}/>, modalContent: null },
-    { id: 4, rowSpan: 2, colSpan: 1, content: <PostsScanned posts={currentPoliticalData[currentPoliticalData.length - 1]["posts"]} />, modalContent: null },
-    { id: 5, rowSpan: 2, colSpan: 1, content: <VibeMeter vibe={currentPoliticalData[currentPoliticalData.length - 1]["vibe"]} />, modalContent: null },
+    { id: 2, rowSpan: 2, colSpan: 1, content: <LastUpdated lastUpdated={lastUpdated} />, modalContent: null },
+    { id: 3, rowSpan: 3, colSpan: 1, content: <TrendingPoliticians trendingPoliticians={latestPoint.trending_politicians}/>, modalContent: null },
+    { id: 4, rowSpan: 2, colSpan: 1, content: <PostsScanned posts={latestPoint.posts} />, modalContent: null },
+    { id: 5, rowSpan: 2, colSpan: 1, content: <VibeMeter vibe={latestPoint.vibe} />, modalContent: null },
     { id: 6, rowSpan: 1, colSpan: 1, content: <LearnMore />, modalContent: <LearnMoreModalContent onClose={closeModal} /> }
   ];
 
@@ -156,6 +190,10 @@ function App() {
         )
       }
 
+      {isLoadingData && (
+        <div className='px-5 text-gray-400'>Loading dashboard data...</div>
+      )}
+
       <div className='flex flex-row justify-between p-5'>
         <h1 className='text-2xl font-black text-center text-white'> Reddit Political Dashboard </h1>
         {/* dropdown menu to select subreddit */}
@@ -164,8 +202,8 @@ function App() {
           value={currentSubreddit}
           onChange={(e) => setCurrentSubreddit(e.target.value)}
         >
-          {/* map keys from political_data_map */}
-          {Object.keys(political_data_map).map((subreddit) => (
+          {/* map keys from politicalDataMap */}
+          {Object.keys(politicalDataMap).map((subreddit) => (
             <option key={subreddit} value={subreddit}> {subreddit} </option>
           ))}
         </select>

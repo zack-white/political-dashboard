@@ -1,0 +1,1902 @@
+{
+  "lastUpdated": "2026-02-20T00:25:13.726Z",
+  "political_data_map": {
+    "politics": [
+      {
+        "date": "02/20",
+        "left": 0.74,
+        "right": 0.26,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          }
+        ]
+      }
+    ],
+    "r/Conservative": [
+      {
+        "date": "01/30",
+        "left": 0.3,
+        "right": 0.7,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "01/31",
+        "left": 0.29,
+        "right": 0.71,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/01",
+        "left": 0.31,
+        "right": 0.69,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/02",
+        "left": 0.38,
+        "right": 0.62,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/03",
+        "left": 0.21,
+        "right": 0.79,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/04",
+        "left": 0.31,
+        "right": 0.69,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/05",
+        "left": 0.2,
+        "right": 0.8,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/06",
+        "left": 0.31,
+        "right": 0.69,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/07",
+        "left": 0.33,
+        "right": 0.67,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/08",
+        "left": 0.22,
+        "right": 0.78,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/09",
+        "left": 0.26,
+        "right": 0.74,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/10",
+        "left": 0.25,
+        "right": 0.75,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/11",
+        "left": 0.33,
+        "right": 0.67,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/12",
+        "left": 0.28,
+        "right": 0.72,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/13",
+        "left": 0.32,
+        "right": 0.68,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/14",
+        "left": 0.32,
+        "right": 0.68,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/15",
+        "left": 0.3,
+        "right": 0.7,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/16",
+        "left": 0.34,
+        "right": 0.66,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/17",
+        "left": 0.22,
+        "right": 0.78,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/18",
+        "left": 0.28,
+        "right": 0.72,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
+      }
+    ],
+    "r/Democrats": [
+      {
+        "date": "01/30",
+        "left": 0.96,
+        "right": 0.04,
+        "posts": 110,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Bernie Sanders",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Mitch McConnell",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "01/31",
+        "left": 0.92,
+        "right": 0.08,
+        "posts": 115,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Bernie Sanders",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Mitch McConnell",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/01",
+        "left": 0.92,
+        "right": 0.08,
+        "posts": 120,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Mitch McConnell",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/02",
+        "left": 0.94,
+        "right": 0.06,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/03",
+        "left": 0.92,
+        "right": 0.08,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/04",
+        "left": 0.97,
+        "right": 0.03,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/05",
+        "left": 0.94,
+        "right": 0.06,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/06",
+        "left": 0.94,
+        "right": 0.06,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/07",
+        "left": 0.91,
+        "right": 0.09,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/08",
+        "left": 0.88,
+        "right": 0.12,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/09",
+        "left": 0.93,
+        "right": 0.07,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/10",
+        "left": 0.95,
+        "right": 0.05,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/11",
+        "left": 0.9,
+        "right": 0.1,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/12",
+        "left": 0.89,
+        "right": 0.11,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/13",
+        "left": 0.93,
+        "right": 0.07,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/14",
+        "left": 0.91,
+        "right": 0.09,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/15",
+        "left": 0.97,
+        "right": 0.03,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/16",
+        "left": 0.94,
+        "right": 0.06,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/17",
+        "left": 0.88,
+        "right": 0.12,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/18",
+        "left": 0.89,
+        "right": 0.11,
+        "posts": 130,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Nancy Pelosi",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Ted Cruz",
+            "sentiment": "Negative"
+          }
+        ]
+      }
+    ],
+    "r/Politics": [
+      {
+        "date": "01/30",
+        "left": 0.74,
+        "right": 0.26,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "01/31",
+        "left": 0.91,
+        "right": 0.09,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/01",
+        "left": 0.59,
+        "right": 0.41,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/02",
+        "left": 0.81,
+        "right": 0.19,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/03",
+        "left": 0.71,
+        "right": 0.29,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/04",
+        "left": 0.83,
+        "right": 0.17,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/05",
+        "left": 0.79,
+        "right": 0.21,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/06",
+        "left": 0.74,
+        "right": 0.26,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/07",
+        "left": 0.86,
+        "right": 0.14,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/08",
+        "left": 0.67,
+        "right": 0.33,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/09",
+        "left": 0.76,
+        "right": 0.24,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/10",
+        "left": 0.85,
+        "right": 0.15,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/11",
+        "left": 0.59,
+        "right": 0.41,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/12",
+        "left": 0.97,
+        "right": 0.03,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/13",
+        "left": 0.71,
+        "right": 0.29,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/14",
+        "left": 0.99,
+        "right": 0.01,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/15",
+        "left": 0.82,
+        "right": 0.18,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/16",
+        "left": 0.83,
+        "right": 0.17,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/17",
+        "left": 0.88,
+        "right": 0.12,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/18",
+        "left": 0.93,
+        "right": 0.07,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Mixed"
+          },
+          {
+            "name": "Merrick Garland",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Ken Paxton",
+            "sentiment": "Negative"
+          }
+        ]
+      }
+    ],
+    "r/masspolitics": [
+      {
+        "date": "01/30",
+        "left": 0.85,
+        "right": 0.15,
+        "posts": 47,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Elizabeth Warren",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Charlie Baker",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "01/31",
+        "left": 0.85,
+        "right": 0.15,
+        "posts": 52,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Elizabeth Warren",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Charlie Baker",
+            "sentiment": "Mixed"
+          }
+        ]
+      },
+      {
+        "date": "02/01",
+        "left": 0.77,
+        "right": 0.23,
+        "posts": 49,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Charlie Baker",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/02",
+        "left": 0.79,
+        "right": 0.21,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/03",
+        "left": 0.85,
+        "right": 0.15,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/04",
+        "left": 0.85,
+        "right": 0.15,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/05",
+        "left": 0.78,
+        "right": 0.22,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/06",
+        "left": 0.81,
+        "right": 0.19,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/07",
+        "left": 0.76,
+        "right": 0.24,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/08",
+        "left": 0.89,
+        "right": 0.11,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/09",
+        "left": 0.81,
+        "right": 0.19,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/10",
+        "left": 0.82,
+        "right": 0.18,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/11",
+        "left": 0.92,
+        "right": 0.08,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/12",
+        "left": 0.84,
+        "right": 0.16,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/13",
+        "left": 0.74,
+        "right": 0.26,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/14",
+        "left": 0.84,
+        "right": 0.16,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/15",
+        "left": 0.86,
+        "right": 0.14,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/16",
+        "left": 0.84,
+        "right": 0.16,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/17",
+        "left": 0.77,
+        "right": 0.23,
+        "posts": 53,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Maura Healey",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Geoff Diehl",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/18",
+        "left": 0.76,
+        "right": 0.24,
+        "posts": 55,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Elizabeth Warren",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Charlie Baker",
+            "sentiment": "Mixed"
+          }
+        ]
+      }
+    ],
+    "r/texaspolitics": [
+      {
+        "date": "01/30",
+        "left": 0.29,
+        "right": 0.71,
+        "posts": 80,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Ted Cruz",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Beto O'Rourke",
+            "sentiment": "Positive"
+          }
+        ]
+      },
+      {
+        "date": "01/31",
+        "left": 0.5,
+        "right": 0.5,
+        "posts": 85,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Ted Cruz",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Beto O'Rourke",
+            "sentiment": "Positive"
+          }
+        ]
+      },
+      {
+        "date": "02/01",
+        "left": 0.46,
+        "right": 0.54,
+        "posts": 90,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Greg Abbott",
+            "sentiment": "Mixed"
+          },
+          {
+            "name": "Beto O'Rourke",
+            "sentiment": "Positive"
+          }
+        ]
+      },
+      {
+        "date": "02/02",
+        "left": 0.32,
+        "right": 0.68,
+        "posts": 88,
+        "vibe": "Mixed",
+        "trending_politicians": [
+          {
+            "name": "Greg Abbott",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Julian Castro",
+            "sentiment": "Positive"
+          }
+        ]
+      },
+      {
+        "date": "02/03",
+        "left": 0.8,
+        "right": 0.2,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/04",
+        "left": 0.57,
+        "right": 0.43,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/05",
+        "left": 0.51,
+        "right": 0.49,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/06",
+        "left": 0.49,
+        "right": 0.51,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/07",
+        "left": 0.8,
+        "right": 0.2,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/08",
+        "left": 0.47,
+        "right": 0.53,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/09",
+        "left": 0.78,
+        "right": 0.22,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/10",
+        "left": 0.37,
+        "right": 0.63,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/11",
+        "left": 0.68,
+        "right": 0.32,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/12",
+        "left": 0.56,
+        "right": 0.44,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/13",
+        "left": 0.49,
+        "right": 0.51,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/14",
+        "left": 0.44,
+        "right": 0.56,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/15",
+        "left": 0.71,
+        "right": 0.29,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/16",
+        "left": 0.59,
+        "right": 0.41,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/17",
+        "left": 0.63,
+        "right": 0.37,
+        "posts": 125,
+        "vibe": "Very Positive",
+        "trending_politicians": [
+          {
+            "name": "Kamala Harris",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Kevin McCarthy",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "02/18",
+        "left": 0.32,
+        "right": 0.68,
+        "posts": 95,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Ted Cruz",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Beto O'Rourke",
+            "sentiment": "Positive"
+          }
+        ]
+      }
+    ]
+  }
+}
