@@ -4,6 +4,7 @@ import { CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Area, AreaCh
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoIosClose } from "react-icons/io";
 import VibeMeter from './VibeMeter';
+import { Analytics } from "@vercel/analytics/react";
 
 const Modal = ({ children }) => {
   return (
@@ -182,6 +183,7 @@ function App() {
 
   return (
     <div className='h-full min-h-screen p-5 bg-black'>
+      <Analytics />
       {
         isModalOpen && (
           <Modal>
