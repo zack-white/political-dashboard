@@ -24,3 +24,19 @@ For some, this was our first foray into a team coding environment, and we learne
 ##What's next for Reddit Politics Sentiment Analysis
 We are planning to run the data every day to obtain a large database of daily sentiment and political leaning from Reddit. With this, we can turn our data into real graphs, and not display dummy data on the site. Additionally, the site is designed so we can explore other subreddits for analysis if we so wish.
 
+## Data health check (daily pipeline guardrail)
+A validator script is included to make sure exported dashboard data is fresh and structurally valid before/after deploy.
+
+Run:
+
+```bash
+npm run data:validate
+```
+
+Checks performed:
+- `public/data/political_data_map.json` exists and parses
+- `lastUpdated` is present and not stale (default max age: 36h)
+- each subreddit has at least one entry
+- latest entry has valid `date`, `left`, `right`, `posts`, `vibe`, `trending_politicians`
+- `left + right` is approximately 1.0
+

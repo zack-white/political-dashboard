@@ -19,7 +19,9 @@
     "test": "echo \"No test runner configured yet\"",
     "db:sync": "node scripts/sync-db-and-export.mjs",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "data:validate": "node scripts/validate-dashboard-data.mjs",
+    "daily:check": "npm run data:validate"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.0",
