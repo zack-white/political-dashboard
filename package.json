@@ -21,7 +21,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "data:validate": "node scripts/validate-dashboard-data.mjs",
-    "daily:check": "npm run data:validate"
+    "daily:check": "npm run data:validate",
+    "daily:ensure": "node scripts/ensure-today-rows.mjs",
+    "daily:refresh": "npm run daily:ensure && npm run db:sync && npm run data:validate"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.0",

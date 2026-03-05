@@ -1,9 +1,26 @@
 {
-  "lastUpdated": "2026-02-20T00:25:13.726Z",
+  "lastUpdated": "2026-03-05T18:31:44.028Z",
   "political_data_map": {
     "politics": [
       {
         "date": "02/20",
+        "left": 0.74,
+        "right": 0.26,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Joe Biden",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Donald Trump",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "03/05",
         "left": 0.74,
         "right": 0.26,
         "posts": 101,
@@ -440,6 +457,27 @@
             "sentiment": "Negative"
           }
         ]
+      },
+      {
+        "date": "03/05",
+        "left": 0.28,
+        "right": 0.72,
+        "posts": 89,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Negative"
+          }
+        ]
       }
     ],
     "r/Democrats": [
@@ -768,6 +806,23 @@
       },
       {
         "date": "02/18",
+        "left": 0.89,
+        "right": 0.11,
+        "posts": 130,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Nancy Pelosi",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Ted Cruz",
+            "sentiment": "Negative"
+          }
+        ]
+      },
+      {
+        "date": "03/05",
         "left": 0.89,
         "right": 0.11,
         "posts": 130,
@@ -1212,6 +1267,35 @@
             "sentiment": "Negative"
           }
         ]
+      },
+      {
+        "date": "03/05",
+        "left": 0.93,
+        "right": 0.07,
+        "posts": 101,
+        "vibe": "Negative",
+        "trending_politicians": [
+          {
+            "name": "Donald Trump",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Joe Biden",
+            "sentiment": "Mixed"
+          },
+          {
+            "name": "Merrick Garland",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Matt Gaetz",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Ken Paxton",
+            "sentiment": "Negative"
+          }
+        ]
       }
     ],
     "r/masspolitics": [
@@ -1554,6 +1638,23 @@
             "sentiment": "Mixed"
           }
         ]
+      },
+      {
+        "date": "03/05",
+        "left": 0.76,
+        "right": 0.24,
+        "posts": 55,
+        "vibe": "Positive",
+        "trending_politicians": [
+          {
+            "name": "Elizabeth Warren",
+            "sentiment": "Positive"
+          },
+          {
+            "name": "Charlie Baker",
+            "sentiment": "Mixed"
+          }
+        ]
       }
     ],
     "r/texaspolitics": [
@@ -1882,6 +1983,23 @@
       },
       {
         "date": "02/18",
+        "left": 0.32,
+        "right": 0.68,
+        "posts": 95,
+        "vibe": "Neutral",
+        "trending_politicians": [
+          {
+            "name": "Ted Cruz",
+            "sentiment": "Negative"
+          },
+          {
+            "name": "Beto O'Rourke",
+            "sentiment": "Positive"
+          }
+        ]
+      },
+      {
+        "date": "03/05",
         "left": 0.32,
         "right": 0.68,
         "posts": 95,
