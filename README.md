@@ -21,7 +21,7 @@ Adapting an LLM to our data that we scraped was very difficult and very rewardin
 ## What we learned
 For some, this was our first foray into a team coding environment, and we learned the skills to delegate and work together on certain tasks. We also went through all the steps of designing and creating a product from scratch. For smaller victories, this was some people’s first foray into Python. Learning LLMs such as the OpenAI API was very rewarding, especially as this is a very budding field in the tech industry.
 
-##What's next for Reddit Politics Sentiment Analysis
+## What's next for Reddit Politics Sentiment Analysis
 We are planning to run the data every day to obtain a large database of daily sentiment and political leaning from Reddit. With this, we can turn our data into real graphs, and not display dummy data on the site. Additionally, the site is designed so we can explore other subreddits for analysis if we so wish.
 
 ## Data health check (daily pipeline guardrail)

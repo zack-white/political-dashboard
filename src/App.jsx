@@ -40,7 +40,7 @@ const PoliticalLeaningChartModal = ({ currentSubreddit, data, onClose }) => {
       <PoliticalLeaningChart currentSubreddit={currentSubreddit} data={data} />
     </div>
   );
-}
+};
 
 
 
@@ -101,13 +101,15 @@ const LearnMoreModalContent = ({ onClose }) => {
       </button>
       <div className='w-full h-full p-3'>
         <h2 className='mb-3 text-3xl font-bold text-center'> Learn More </h2>
-        <div className='my-4'>
-          <p> The r/politics dashboard serves as a tool to quickly gather what parties and sentiments are being discussed on an affluent social media site like Reddit. </p>
+        <div className='my-4 space-y-3'>
           <p>
-            Developed for JumboHack 2024, this tool uses data gathered from discussion boards, and analyzes this data for political and social sentiment using a trained ML model.
+            The r/politics dashboard helps you quickly understand which viewpoints and sentiments are showing up in Reddit political discussions.
           </p>
           <p>
-            It was designed to help users comprehend news quickly on a community-driven site like Reddit, this dashboard serves to get an overview of current political trends by day, and how real people feel about ongoing events.
+            Built for JumboHack 2024, it analyzes discussion-board headlines with a trained ML pipeline to estimate political leaning and overall sentiment.
+          </p>
+          <p>
+            The goal is to provide a fast, community-driven snapshot of daily political trends and how people are reacting to current events.
           </p>
         </div>
         <div className='flex justify-between'>
