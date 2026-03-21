@@ -53,26 +53,32 @@ const LastUpdated = ({ lastUpdated }) => {
   );
 }
 
-const TrendingPoliticians = ({trendingPoliticians}) => {
+const TrendingPoliticians = ({ trendingPoliticians = [] }) => {
   return (
-    // list of politicians
     <div className='flex flex-col items-center justify-center w-full h-full p-5'>
       <FaArrowTrendUp size="50px" />
       <h2 className='text-xl font-bold text-center'> Trending Politicians </h2>
-      <table className='w-full p-2 text-center'>
-        <tr>
-          <th> Politician </th>
-          <th> Sentiment </th>
-        </tr>
-        {
-          trendingPoliticians.map((politician) => (
+
+      {trendingPoliticians.length === 0 ? (
+        <p className='mt-3 text-sm text-gray-300'>No trending politicians yet.</p>
+      ) : (
+        <table className='w-full p-2 mt-2 text-center'>
+          <thead>
             <tr>
-              <td> {politician.name} </td>
-              <td> {politician.sentiment} </td>
+              <th scope='col'> Politician </th>
+              <th scope='col'> Sentiment </th>
             </tr>
-          ))
-        }
-      </table>
+          </thead>
+          <tbody>
+            {trendingPoliticians.map((politician, index) => (
+              <tr key={`${politician.name}-${index}`}>
+                <td> {politician.name} </td>
+                <td> {politician.sentiment} </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 }
