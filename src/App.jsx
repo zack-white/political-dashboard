@@ -172,6 +172,19 @@ function App() {
     setModalContent(null);
   };
 
+  useEffect(() => {
+    if (!isModalOpen) return;
+
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isModalOpen]);
+
   const currentPoliticalData = politicalDataMap[currentSubreddit] || [];
   const latestPoint = currentPoliticalData[currentPoliticalData.length - 1] || {
     posts: 0,
