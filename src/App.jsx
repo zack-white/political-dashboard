@@ -185,6 +185,8 @@ function App() {
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [isModalOpen]);
 
+  const subredditKeys = Object.keys(politicalDataMap);
+  const hasSubreddits = subredditKeys.length > 0;
   const currentPoliticalData = politicalDataMap[currentSubreddit] || [];
   const latestPoint = currentPoliticalData[currentPoliticalData.length - 1] || {
     posts: 0,
@@ -221,16 +223,26 @@ function App() {
         <h1 className='text-2xl font-black text-center text-white'> Reddit Political Dashboard </h1>
         {/* dropdown menu to select subreddit */}
         <select
-          className='p-2 bg-neutral-800 text-white rounded-md w-[32.5%]'
-          value={currentSubreddit}
+          className='p-2 bg-neutral-800 text-white rounded-md w-[32.5%] disabled:opacity-60 disabled:cursor-not-allowed'
+          value={hasSubreddits ? currentSubreddit : ''}
           onChange={(e) => setCurrentSubreddit(e.target.value)}
+          disabled={!hasSubreddits || isLoadingData}
         >
-          {/* map keys from politicalDataMap */}
-          {Object.keys(politicalDataMap).map((subreddit) => (
-            <option key={subreddit} value={subreddit}> {subreddit} </option>
-          ))}
+          {!hasSubreddits ? (
+            <option value=''>No subreddit data available</option>
+          ) : (
+            subredditKeys.map((subreddit) => (
+              <option key={subreddit} value={subreddit}>{subreddit}</option>
+            ))
+          )}
         </select>
       </div>
+
+      {!isLoadingData && !hasSubreddits && (
+        <div className='mx-5 mt-2 rounded-md border border-amber-300/30 bg-amber-300/10 p-3 text-sm text-amber-100'>
+          No subreddit data is currently available. Check back after the next data refresh.
+        </div>
+      )}
 
       <div className="grid auto-rows-[93px] grid-cols-3 gap-4 m-5">
         {boxes.map(box => (
