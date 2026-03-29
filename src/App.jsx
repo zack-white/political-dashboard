@@ -185,7 +185,7 @@ function App() {
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [isModalOpen]);
 
-  const subredditKeys = Object.keys(politicalDataMap);
+  const subredditKeys = Object.keys(politicalDataMap).sort((a, b) => a.localeCompare(b));
   const hasSubreddits = subredditKeys.length > 0;
   const currentPoliticalData = politicalDataMap[currentSubreddit] || [];
   const latestPoint = currentPoliticalData[currentPoliticalData.length - 1] || {
@@ -222,20 +222,27 @@ function App() {
       <div className='flex flex-row justify-between p-5'>
         <h1 className='text-2xl font-black text-center text-white'> Reddit Political Dashboard </h1>
         {/* dropdown menu to select subreddit */}
-        <select
-          className='p-2 bg-neutral-800 text-white rounded-md w-[32.5%] disabled:opacity-60 disabled:cursor-not-allowed'
-          value={hasSubreddits ? currentSubreddit : ''}
-          onChange={(e) => setCurrentSubreddit(e.target.value)}
-          disabled={!hasSubreddits || isLoadingData}
-        >
-          {!hasSubreddits ? (
-            <option value=''>No subreddit data available</option>
-          ) : (
-            subredditKeys.map((subreddit) => (
-              <option key={subreddit} value={subreddit}>{subreddit}</option>
-            ))
-          )}
-        </select>
+        <div className='flex flex-col items-end gap-1 w-[32.5%]'>
+          <select
+            className='w-full p-2 text-white rounded-md bg-neutral-800 disabled:opacity-60 disabled:cursor-not-allowed'
+            value={hasSubreddits ? currentSubreddit : ''}
+            onChange={(e) => setCurrentSubreddit(e.target.value)}
+            disabled={!hasSubreddits || isLoadingData}
+          >
+            {isLoadingData ? (
+              <option value=''>Loading subreddit data...</option>
+            ) : !hasSubreddits ? (
+              <option value=''>No subreddit data available</option>
+            ) : (
+              subredditKeys.map((subreddit) => (
+                <option key={subreddit} value={subreddit}>{subreddit}</option>
+              ))
+            )}
+          </select>
+          <p className='text-xs text-gray-400'>
+            {isLoadingData ? 'Syncing latest feed…' : `${subredditKeys.length} subreddit${subredditKeys.length === 1 ? '' : 's'} available`}
+          </p>
+        </div>
       </div>
 
       {!isLoadingData && !hasSubreddits && (
