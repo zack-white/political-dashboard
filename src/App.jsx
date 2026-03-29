@@ -8,7 +8,10 @@ import { Analytics } from "@vercel/analytics/react";
 
 const Modal = ({ children }) => {
   return (
-    <div className="fixed inset-0 z-20 flex items-center justify-center w-screen h-screen p-5 bg-black bg-opacity-50">
+    <div
+      className="fixed inset-0 z-20 flex items-center justify-center w-screen h-screen p-5 bg-black bg-opacity-50"
+      role="presentation"
+    >
       {children}
     </div>
   );
@@ -34,8 +37,8 @@ const PoliticalLeaningChart = ({ currentSubreddit, data }) => {
 
 const PoliticalLeaningChartModal = ({ currentSubreddit, data, onClose }) => {
   return (
-    <div className="w-full h-full p-5 overflow-auto text-white rounded-lg bg-neutral-800">
-      <button className="float-right p-2 text-white" onClick={onClose}><IoIosClose size={"30px"} />
+    <div className="w-full h-full p-5 overflow-auto text-white rounded-lg bg-neutral-800" role="dialog" aria-modal="true" aria-label="Political leaning chart details">
+      <button className="float-right p-2 text-white" onClick={onClose} aria-label="Close chart modal"><IoIosClose size={"30px"} />
       </button>
       <PoliticalLeaningChart currentSubreddit={currentSubreddit} data={data} />
     </div>
@@ -48,7 +51,7 @@ const LastUpdated = ({ lastUpdated }) => {
   return (
     <>
       <h2 className='text-2xl text-gray-500 center'> Last Data Refresh:  </h2>
-      <p className='text-2xl text-white center'> {lastUpdated} </p>
+      <p className='text-2xl text-white center' aria-live='polite'> {lastUpdated} </p>
     </>
   );
 }
@@ -63,6 +66,7 @@ const TrendingPoliticians = ({ trendingPoliticians = [] }) => {
         <p className='mt-3 text-sm text-gray-300'>No trending politicians yet.</p>
       ) : (
         <table className='w-full p-2 mt-2 text-center'>
+          <caption className='sr-only'>Trending politicians and current sentiment</caption>
           <thead>
             <tr>
               <th scope='col'> Politician </th>
@@ -223,11 +227,14 @@ function App() {
         <h1 className='text-2xl font-black text-center text-white'> Reddit Political Dashboard </h1>
         {/* dropdown menu to select subreddit */}
         <div className='flex flex-col items-end gap-1 w-[32.5%]'>
+          <label htmlFor='subreddit-select' className='text-xs text-gray-300'>Select subreddit</label>
           <select
+            id='subreddit-select'
             className='w-full p-2 text-white rounded-md bg-neutral-800 disabled:opacity-60 disabled:cursor-not-allowed'
             value={hasSubreddits ? currentSubreddit : ''}
             onChange={(e) => setCurrentSubreddit(e.target.value)}
             disabled={!hasSubreddits || isLoadingData}
+            aria-describedby='subreddit-status'
           >
             {isLoadingData ? (
               <option value=''>Loading subreddit data...</option>
@@ -239,7 +246,7 @@ function App() {
               ))
             )}
           </select>
-          <p className='text-xs text-gray-400'>
+          <p id='subreddit-status' className='text-xs text-gray-400' aria-live='polite'>
             {isLoadingData ? 'Syncing latest feed…' : `${subredditKeys.length} subreddit${subredditKeys.length === 1 ? '' : 's'} available`}
           </p>
         </div>
