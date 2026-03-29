@@ -38,7 +38,7 @@ const PoliticalLeaningChart = ({ currentSubreddit, data }) => {
 const PoliticalLeaningChartModal = ({ currentSubreddit, data, onClose }) => {
   return (
     <div className="w-full h-full p-5 overflow-auto text-white rounded-lg bg-neutral-800" role="dialog" aria-modal="true" aria-label="Political leaning chart details">
-      <button className="float-right p-2 text-white" onClick={onClose} aria-label="Close chart modal"><IoIosClose size={"30px"} />
+      <button type='button' className="float-right p-2 text-white" onClick={onClose} aria-label="Close chart modal"><IoIosClose size={"30px"} />
       </button>
       <PoliticalLeaningChart currentSubreddit={currentSubreddit} data={data} />
     </div>
@@ -106,8 +106,8 @@ const LearnMore = () => {
 
 const LearnMoreModalContent = ({ onClose }) => {
   return (
-    <div className="p-5 overflow-auto text-white rounded-lg max-w-[600px] bg-neutral-800">
-      <button className="float-right p-2 text-white" onClick={onClose}><IoIosClose size={"30px"} />
+    <div className="p-5 overflow-auto text-white rounded-lg max-w-[600px] bg-neutral-800" role="dialog" aria-modal="true" aria-label="Learn more details">
+      <button type='button' className="float-right p-2 text-white" onClick={onClose} aria-label="Close learn more modal"><IoIosClose size={"30px"} />
       </button>
       <div className='w-full h-full p-3'>
         <h2 className='mb-3 text-3xl font-bold text-center'> Learn More </h2>
@@ -259,15 +259,29 @@ function App() {
       )}
 
       <div className="grid auto-rows-[93px] grid-cols-3 gap-4 m-5">
-        {boxes.map(box => (
-          <div
-            key={box.id}
-            onClick={box.modalContent != null ? (() => openModal(box.modalContent)) : null}
-            className={`transition ease-in-out hover:scale-[102%] ${box.rowSpan === 1 && "row-span-1"} ${box.rowSpan === 2 && "row-span-2"} ${box.rowSpan === 3 && "row-span-3"} ${box.rowSpan === 4 && "row-span-4"} ${box.colSpan === 1 && "md:col-span-1"} ${box.colSpan === 2 && "md:col-span-2"} col-span-3 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900 text-white flex items-center justify-center ${box.modalContent != null && 'cursor-pointer'} flex-col`}
-          >
-            {box.content}
-          </div>
-        ))}
+        {boxes.map((box) => {
+          const tileClassName = `transition ease-in-out hover:scale-[102%] ${box.rowSpan === 1 && "row-span-1"} ${box.rowSpan === 2 && "row-span-2"} ${box.rowSpan === 3 && "row-span-3"} ${box.rowSpan === 4 && "row-span-4"} ${box.colSpan === 1 && "md:col-span-1"} ${box.colSpan === 2 && "md:col-span-2"} col-span-3 rounded-xl border-2 border-slate-400/10 p-4 bg-neutral-900 text-white flex items-center justify-center flex-col`;
+
+          if (box.modalContent != null) {
+            return (
+              <button
+                key={box.id}
+                type='button'
+                onClick={() => openModal(box.modalContent)}
+                className={`${tileClassName} cursor-pointer text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300`}
+                aria-label={`Open details for tile ${box.id}`}
+              >
+                {box.content}
+              </button>
+            );
+          }
+
+          return (
+            <div key={box.id} className={tileClassName}>
+              {box.content}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
